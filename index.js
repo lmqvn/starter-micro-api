@@ -21,7 +21,7 @@ app.post('/execute', (req, res) => {
   exec(sanitizedData, (error, stdout, stderr) => {
     if (error) {
       console.error('Error executing the command:', error.message);
-      return res.status(500).json({ error: 'An error occurred while executing the command.' });
+      return res.status(500).json({ error: 'error.message' });
     }
 
     // Return the command output
